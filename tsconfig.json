@@ -1,0 +1,7 @@
+{
+    "extends": "@goodbyenjn/configs/tsconfigs/base",
+    "compilerOptions": {
+        "types": ["node", "@goodbyenjn/utils/global-types"]
+    },
+    "include": ["./*", "src", "tests", "types"]
+}

@@ -1,0 +1,50 @@
+{
+    "name": "create-goodbyenjn-configs",
+    "version": "1.0.0",
+    "description": "A tool to init project with GoodbyeNJN's configs, including TypeScript, oxlint, and oxfmt setup.",
+    "keywords": [
+        "oxfmt",
+        "oxlint",
+        "typescript"
+    ],
+    "homepage": "https://github.com/GoodbyeNJN/create-goodbyenjn-configs",
+    "bugs": {
+        "url": "https://github.com/GoodbyeNJN/create-goodbyenjn-configs/issues"
+    },
+    "license": "MIT",
+    "author": "GoodbyeNJN <cc@fuckwall.cc>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/GoodbyeNJN/create-goodbyenjn-configs.git"
+    },
+    "bin": "dist/index.js",
+    "files": [
+        "dist"
+    ],
+    "type": "module",
+    "scripts": {
+        "start": "rolldown -c && node dist/index.js",
+        "build": "rolldown -c",
+        "check": "tsc && oxlint && oxfmt --check",
+        "check:type": "tsc",
+        "lint": "oxlint",
+        "lint:fix": "oxlint --fix",
+        "format": "oxfmt --check",
+        "format:write": "oxfmt"
+    },
+    "devDependencies": {
+        "@goodbyenjn/configs": "^26.9.1",
+        "@goodbyenjn/utils": "^26.9.0",
+        "@types/node": "^26.5.0",
+        "jsonc-parser": "^3.3.1",
+        "oxfmt": "^0.67.0",
+        "oxlint": "^1.82.0",
+        "oxlint-tsgolint": "^7.0.2001",
+        "package-manager-detector": "^1.8.0",
+        "rolldown": "^1.2.7",
+        "typescript": "^7.0.2"
+    },
+    "engines": {
+        "node": "^22.2.0 || ^24.0.0 || >=26.0.0"
+    }
+}
